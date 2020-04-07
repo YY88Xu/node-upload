@@ -5,16 +5,23 @@
     <title>index</title>
 </head>
 <body>
-<form action="http://localhost:8081/process_get" method="get">
+<form action="http://localhost:8081/process_post" method="get">
     First Name: <input type="text" name="first_name"> <br>
     Last Name: <input type="text" name="last_name">
     <input type="submit" value="Submit">
 </form>
-
+<br>
 <form action="http://localhost:8081/process_post" method="post">
     First Name: <input type="text" name="first_name"> <br>
     Last Name: <input type="text" name="last_name">
     <input type="submit" value="Submit">
 </form>
+<br>
+<form action="/file_upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" size="50">
+    <br>
+    <input type="submit" value="上传文件"/>
+</form>
 </body>
 </html>
+https://blog.csdn.net/qq_36370731/article/details/82416423
